@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .header img{
+            height:50vw;
+            width:100vw;
+            margin-bottom: 0px;
+            margin-bottom: -5px;
+        }
+
+        .contact {
+            padding-top: -5px;
+            background-color: black;
+            
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(170, 128, 22);
+            margin: 3vw 0;
+            width: 95vw;
+            height: 4vw;
+            border-radius: 1vw; 
+            margin-right: 4vw;
+            font: 700 2vw Archivo;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+
+    </style>
     <title>Happy Popoto</title>
 </head>
 <body>
-   <p></p> 
+   <div class="container">
+        <header class="header">
+            <img src="../assets/banner.png" alt="Banner da Happy Popoto para Black Friday" title="Banner Black Friday Happy Popoto" />
+        </header>
+
+        <div class="contact">
+            <form class="form" action="">
+                <input type="email" name="email" class="email" placeholder="Digite seu email">
+                <button class="button">Enviar</button>
+            </form>
+        </div>
+
+        <div id="items-wrapper">
+
+        </div>
+
+   </div>
 </body>
 </html>
