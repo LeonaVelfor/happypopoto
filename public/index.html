@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-
-        .header img{
-            height:50vw;
-            width:100vw;
-            margin-bottom: 0px;
-            margin-bottom: -5px;
-        }
-
-        .contact {
-            padding-top: -5px;
-            background-color: black;
-            
-        }
-
-        .button {
-            display: flex;
-            justify-content: center;
-            background-color: rgb(170, 128, 22);
-            margin: 3vw 0;
-            width: 95vw;
-            height: 4vw;
-            border-radius: 1vw; 
-            margin-right: 4vw;
-            font: 700 2vw Archivo;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-        }
-
-
-    </style>
     <title>Happy Popoto</title>
 </head>
 <body>
    <div class="container">
-        <header class="header">
-            <img src="../assets/banner.png" alt="Banner da Happy Popoto para Black Friday" title="Banner Black Friday Happy Popoto" />
-        </header>
+      <header class="header">
+        <img src="../assets/banner.png" alt="Banner da Happy Popoto para Black Friday" title="Banner Black Friday Happy Popoto" />
+      </header>
 
-        <div class="contact">
-            <form class="form" action="">
-                <input type="email" name="email" class="email" placeholder="Digite seu email">
-                <button class="button">Enviar</button>
-            </form>
+     
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade" id="first" >
+        <img src="http://ortodontiadescomplicada.com.br/wp-content/uploads/2016/10/img-300x300.png" style="width:100%">
+        <div class="text">Ração</div>
+      </div>
+        
+      <div class="mySlides fade">
+          <img src="http://ortodontiadescomplicada.com.br/wp-content/uploads/2016/10/img-300x300.png" style="width:100%">
+            <div class="text">Caminha</div>
         </div>
-
-        <div id="items-wrapper">
-
+        
+      <div class="mySlides fade">
+        <img src="http://ortodontiadescomplicada.com.br/wp-content/uploads/2016/10/img-300x300.png" style="width:100%">
+        <div class="text">Brinquedo</div>
+      </div>
+        
+      <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+      <br>
+        
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 
-   </div>
+      <form class="form" action="" style="text-align:center" >
+        <input type="email" name="email" class="email" placeholder="Digite seu email">
+        <button class="button" >Enviar</button>
+      </form>
+
+</div>
+
+  
+
 </body>
 </html>
