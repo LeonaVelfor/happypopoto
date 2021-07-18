@@ -1,3 +1,4 @@
+//carrossel
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -26,3 +27,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+//local storage
+
+const form = document.getElementById('form-area');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let email = document.getElementById('email').value;
+   
+    let convertEmail = JSON.stringify(email);
+
+    localStorage.setItem('lead', convertEmail);
+
+})
